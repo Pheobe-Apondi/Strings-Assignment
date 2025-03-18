@@ -33,8 +33,11 @@ const food = 'The quick fox jumped over the lazy dog';
      let s= 'undERneath' ;
      console.log(s.toLowerCase());
 // 3. Title case "A wonderful world"
-     let message = 'A wonderful world'
-         message = message.toLowerCase();
-     let  letter = letter.toUpperCase();
-   console.log(message.replace());
+    
+     let titleCase = "A wonderful world"
+          .split(" ")
+          .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+          .join(" ");
+           console.log(titleCase); 
+
 
